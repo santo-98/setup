@@ -171,7 +171,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 In terminal do, `code ~/.zprofile` and add,
 
-```#
+```sh
 # Executes commands at login pre-zshrc.
 #
 # Authors:
