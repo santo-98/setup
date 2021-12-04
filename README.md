@@ -171,7 +171,70 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 In terminal do, `code ~/.zprofile` and add,
 
-```sh
+```#
+# Executes commands at login pre-zshrc.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+#
+# Browser
+#
+
+if [[ "$OSTYPE" == darwin* ]]; then
+  export BROWSER='open'
+fi
+
+#
+# Editors
+#
+
+export EDITOR='nano'
+export VISUAL='nano'
+export PAGER='less'
+
+#
+# Language
+#
+
+if [[ -z "$LANG" ]]; then
+  export LANG='en_US.UTF-8'
+fi
+
+#
+# Paths
+#
+
+# Ensure path arrays do not contain duplicates.
+typeset -gU cdpath fpath mailpath path
+
+# Set the list of directories that cd searches.
+# cdpath=(
+#   $cdpath
+# )
+
+# Set the list of directories that Zsh searches for programs.
+path=(
+  /usr/local/{bin,sbin}
+  $path
+)
+
+#
+# Less
+#
+
+# Set the default Less options.
+# Mouse-wheel scrolling has been disabled by -X (disable screen clearing).
+# Remove -X and -F (exit if the content fits on one screen) to enable it.
+export LESS='-F -g -i -M -R -S -w -X -z-4'
+
+# Set the Less input preprocessor.
+# Try both `lesspipe` and `lesspipe.sh` as either might exist on a system.
+if (( $#commands[(i)lesspipe(|.sh)] )); then
+  export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
+fi
+
 # Lazy git
 gitpush() {
   echo -e "\e[0;32m YOUR GIT STATUS: \e[0m"
@@ -258,6 +321,28 @@ pushnotes() {
   git push -v
 }
 alias notes='cd && cd projects/orison && code .'
+
+alias hn='cd Projects/hellonext-webapp'
+
+alias zoom='open "zoommtg://zoom.us/join?confno=682865740&pwd=SKCRIPT"'
+# Setting PATH for Python 3.10
+# The original version is saved in .zprofile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:${PATH}"
+export PATH
+
+alias python='python3'
+
+alias newtab='ttab'
+
+alias startrails="lsof -Fp -i:3000 | head -n 1 | sed 's/^p//' | xargs kill -9 && rails s"
+
+starthn() {
+  newtab "hn && make up"
+  newtab "hn && bundle exec sidekiq"
+  newtab "hn && startrails"
+  newtab "hn && rails c"
+  newtab "hn && mysql.server start"
+}
 ```
 
 ## That's it! 👏
