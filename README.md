@@ -322,7 +322,7 @@ pushnotes() {
 }
 alias notes='cd && cd projects/orison && code .'
 
-alias hn='cd Projects/hellonext-webapp'
+alias hn='cd && cd Projects/hellonext-webapp'
 
 alias zoom='open "zoommtg://zoom.us/join?confno=682865740&pwd=SKCRIPT"'
 # Setting PATH for Python 3.10
