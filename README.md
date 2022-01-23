@@ -341,7 +341,7 @@ starthn() {
   newtab "hn && bundle exec sidekiq"
   newtab "hn && startrails"
   newtab "hn && rails c"
-  newtab "hn && mysql.server start"
+  newtab "hn && mysql.server start && brew services restart memcached"
 }
 ```
 
