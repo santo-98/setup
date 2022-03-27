@@ -26,9 +26,7 @@ Some basic installations and updates that are the **NOT** optional.
 
 ```sh
 brew install node
-brew install hugo
 brew install mysql
-brew install youtube-dl libav ffmpeg
 ```
 
 ## Prezto for Zsh 😈
@@ -91,8 +89,8 @@ zstyle ':prezto:load' pmodule \
 ### Setup Git
 
 ```sh
-git config --global user.name "praveenjuge"
-git config --global user.email "praveen@skcript.com"
+git config --global user.name "santhosh"
+git config --global user.email "ssanthoshss@gmail.com"
 git config --global color.ui true
 ```
 
@@ -108,36 +106,10 @@ mkdir ~/Projects
 
 ```sh
 # Apps
-brew install android-file-transfer android-platform-tools
-brew install figma
-brew install iina
-brew install image2icon
 brew install google-chrome
 brew install visual-studio-code
 brew install zoom
 
-# Fonts
-brew tap homebrew/cask-fonts
-
-brew install font-inter
-brew install font-jetbrains-mono
-brew install font-lato
-brew install font-lobster
-brew install font-noto-sans
-brew install font-noto-sans-tamil
-brew install font-nunito
-brew install font-open-sans
-brew install font-playfair-display
-brew install font-poppins
-brew install font-quicksand
-brew install font-raleway
-brew install font-roboto
-brew install font-roboto-condensed
-brew install font-roboto-mono
-brew install font-roboto-slab
-brew install font-source-code-pro
-brew install font-ubuntu
-brew install font-work-sans
 ```
 
 ## OS Changes 💿
