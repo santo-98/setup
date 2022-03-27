@@ -28,7 +28,11 @@ Some basic installations and updates that are the **NOT** optional.
 brew install node
 brew install mysql
 ```
-
+## Tools for productivity
+```sh
+clipy
+warp
+```
 ## Prezto for Zsh 😈
 
 ### Main Prezto Installation
