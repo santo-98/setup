@@ -15,6 +15,9 @@ Some basic installations and updates that are the **NOT** optional.
 - Dock > Automatically hide the dock
 - Trackpad > Tap to click
 - Accessibility > Pointer Control > Increase Double-click speed to full
+- Dock & Menu bar > show recent applications in dock > off
+- Clock > Announce time > every half hour
+- Clock > Display time in seconds
 
 #### Install [Homebrew](https://brew.sh/)
 
@@ -32,6 +35,7 @@ brew install mysql
 ```sh
 clipy
 warp
+Fliqlo
 ```
 ## Prezto for Zsh 😈
 
