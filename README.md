@@ -18,6 +18,7 @@ Some basic installations and updates that are the **NOT** optional.
 - Dock & Menu bar > show recent applications in dock > off
 - Clock > Announce time > every half hour
 - Clock > Display time in seconds
+- Finder > View > Show Path bar
 
 ### HD Wallpapers
 - https://www.pexels.com/search/motivational%20quotes/
