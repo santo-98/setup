@@ -19,6 +19,9 @@ Some basic installations and updates that are the **NOT** optional.
 - Clock > Announce time > every half hour
 - Clock > Display time in seconds
 
+### HD Wallpapers
+- https://www.pexels.com/search/motivational%20quotes/
+
 #### Install [Homebrew](https://brew.sh/)
 
 ```sh
