@@ -21,7 +21,7 @@ Some basic installations and updates that are the **NOT** optional.
 - Finder > View > Show Path bar
 
 ### HD Wallpapers
-- https://www.pexels.com/search/motivational%20quotes/
+- https://www.pexels.com/
 
 #### Install [Homebrew](https://brew.sh/)
 
